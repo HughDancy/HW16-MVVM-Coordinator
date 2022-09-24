@@ -14,6 +14,14 @@
 		D8AE0A8328DC8EF00064AEC0 /* HW16_MVVM_Coordinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0A8128DC8EF00064AEC0 /* HW16_MVVM_Coordinator.xcdatamodeld */; };
 		D8AE0A8528DC8EF20064AEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AE0A8428DC8EF20064AEC0 /* Assets.xcassets */; };
 		D8AE0A8828DC8EF20064AEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AE0A8628DC8EF20064AEC0 /* LaunchScreen.storyboard */; };
+		D8AE0A9B28DEF4170064AEC0 /* PushProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0A9A28DEF4170064AEC0 /* PushProtocol.swift */; };
+		D8AE0A9E28DEF4720064AEC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0A9D28DEF4720064AEC0 /* User.swift */; };
+		D8AE0AA128DEF9890064AEC0 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0AA028DEF9890064AEC0 /* TableViewModel.swift */; };
+		D8AE0AA328DEFD7C0064AEC0 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0AA228DEFD7C0064AEC0 /* ObservableObject.swift */; };
+		D8AE0AA728DEFDD60064AEC0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0AA628DEFDD60064AEC0 /* CustomCell.swift */; };
+		D8AE0AA928DEFE140064AEC0 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0AA828DEFE140064AEC0 /* TableView.swift */; };
+		D8AE0AAB28DEFEF90064AEC0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0AAA28DEFEF90064AEC0 /* UserView.swift */; };
+		D8AE0AAD28DEFF230064AEC0 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE0AAC28DEFF230064AEC0 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		D8AE0A8428DC8EF20064AEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8AE0A8728DC8EF20064AEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8AE0A8928DC8EF20064AEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8AE0A9A28DEF4170064AEC0 /* PushProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushProtocol.swift; sourceTree = "<group>"; };
+		D8AE0A9D28DEF4720064AEC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8AE0AA028DEF9890064AEC0 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		D8AE0AA228DEFD7C0064AEC0 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		D8AE0AA628DEFDD60064AEC0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		D8AE0AA828DEFE140064AEC0 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		D8AE0AAA28DEFEF90064AEC0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D8AE0AAC28DEFF230064AEC0 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +74,88 @@
 		D8AE0A7728DC8EF00064AEC0 /* HW16-MVVM+Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE0AA428DEFDC10064AEC0 /* Views */,
+				D8AE0A9F28DEF8A30064AEC0 /* ViewModels */,
+				D8AE0A9C28DEF4490064AEC0 /* Models */,
+				D8AE0A9928DEF4040064AEC0 /* Protocols */,
+				D8AE0A9828DEF3330064AEC0 /* Resources */,
+				D8AE0A9728DEF3220064AEC0 /* App */,
+				D8AE0A9628DEF3110064AEC0 /* Storeyboards */,
+			);
+			path = "HW16-MVVM+Coordinator";
+			sourceTree = "<group>";
+		};
+		D8AE0A9628DEF3110064AEC0 /* Storeyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE0A7E28DC8EF00064AEC0 /* Main.storyboard */,
+				D8AE0A8628DC8EF20064AEC0 /* LaunchScreen.storyboard */,
+			);
+			path = Storeyboards;
+			sourceTree = "<group>";
+		};
+		D8AE0A9728DEF3220064AEC0 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				D8AE0A7828DC8EF00064AEC0 /* AppDelegate.swift */,
 				D8AE0A7A28DC8EF00064AEC0 /* SceneDelegate.swift */,
-				D8AE0A7C28DC8EF00064AEC0 /* ViewController.swift */,
-				D8AE0A7E28DC8EF00064AEC0 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D8AE0A9828DEF3330064AEC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D8AE0A8428DC8EF20064AEC0 /* Assets.xcassets */,
-				D8AE0A8628DC8EF20064AEC0 /* LaunchScreen.storyboard */,
 				D8AE0A8928DC8EF20064AEC0 /* Info.plist */,
 				D8AE0A8128DC8EF00064AEC0 /* HW16_MVVM_Coordinator.xcdatamodeld */,
 			);
-			path = "HW16-MVVM+Coordinator";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8AE0A9928DEF4040064AEC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE0A9A28DEF4170064AEC0 /* PushProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D8AE0A9C28DEF4490064AEC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE0A9D28DEF4720064AEC0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8AE0A9F28DEF8A30064AEC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE0AA028DEF9890064AEC0 /* TableViewModel.swift */,
+				D8AE0AA228DEFD7C0064AEC0 /* ObservableObject.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D8AE0AA428DEFDC10064AEC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE0AA528DEFDCD0064AEC0 /* Cells */,
+				D8AE0A7C28DC8EF00064AEC0 /* ViewController.swift */,
+				D8AE0AA828DEFE140064AEC0 /* TableView.swift */,
+				D8AE0AAA28DEFEF90064AEC0 /* UserView.swift */,
+				D8AE0AAC28DEFF230064AEC0 /* UserViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8AE0AA528DEFDCD0064AEC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE0AA628DEFDD60064AEC0 /* CustomCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AE0AAB28DEFEF90064AEC0 /* UserView.swift in Sources */,
+				D8AE0AAD28DEFF230064AEC0 /* UserViewController.swift in Sources */,
+				D8AE0A9B28DEF4170064AEC0 /* PushProtocol.swift in Sources */,
+				D8AE0AA928DEFE140064AEC0 /* TableView.swift in Sources */,
+				D8AE0AA128DEF9890064AEC0 /* TableViewModel.swift in Sources */,
 				D8AE0A8328DC8EF00064AEC0 /* HW16_MVVM_Coordinator.xcdatamodeld in Sources */,
+				D8AE0A9E28DEF4720064AEC0 /* User.swift in Sources */,
+				D8AE0AA728DEFDD60064AEC0 /* CustomCell.swift in Sources */,
 				D8AE0A7D28DC8EF00064AEC0 /* ViewController.swift in Sources */,
+				D8AE0AA328DEFD7C0064AEC0 /* ObservableObject.swift in Sources */,
 				D8AE0A7928DC8EF00064AEC0 /* AppDelegate.swift in Sources */,
 				D8AE0A7B28DC8EF00064AEC0 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9KN879RV4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW16-MVVM+Coordinator/Info.plist";
+				INFOPLIST_FILE = "HW16-MVVM+Coordinator/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +417,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9KN879RV4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW16-MVVM+Coordinator/Info.plist";
+				INFOPLIST_FILE = "HW16-MVVM+Coordinator/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
