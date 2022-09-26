@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 protocol PushViewController {
-    func pushToViewController(on vc: UIViewController)
+    var viewModel: TableViewModel { get set }
+//    func pushToViewController(on vc: TableViewModel)
 }

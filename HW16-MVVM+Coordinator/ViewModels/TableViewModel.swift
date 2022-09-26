@@ -10,5 +10,5 @@ import Foundation
 final class TableViewModel {
     
     var users = ObservableObject(User.users)
-
+    var isShow: Bool = false
 }
